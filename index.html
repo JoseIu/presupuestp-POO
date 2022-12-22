@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<script defer src="app.js"></script>
+		<title>POO</title>
+	</head>
+	<body>
+		<main class="main">
+			<h1 class="title">Gasto Semanal</h1>
+			<section class="spent">
+				<div class="spent__left">
+					<h2 class="spent__title">Añade tus gastos aquí</h2>
+					<form action="#" id="presupuesto-form">
+						<div class="spent__content">
+							<label class="spent__label" for="presupuesto">Presupuesto:</label>
+							<input class="spent__input" type="text" placeholder="Presupuesto...." />
+						</div>
+						<!-- <p class="spent__mensaje">No puede ser letras</p> -->
+						<input class="spent__btn spent__btn---long" type="submit" value="Agregar presupuesto" />
+					</form>
+					<form action="#" id="gastos-form">
+						<div class="spent__content">
+							<label class="spent__label" for="gasto">Gasto:</label>
+							<input class="spent__input" type="text" placeholder="Nombre del Gasto" id="nombre-gasto" />
+						</div>
+						<div class="spent__content">
+							<label class="spent__label" for="cantidad">Cantidad:</label>
+							<input class="spent__input" type="text" placeholder="Cantidad en $" id="nombre-cantidad" />
+						</div>
+						<input class="spent__btn spent__btn---gasto" type="submit" value="Agregar Gasto" />
+					</form>
+				</div>
+				<div class="spent__right">
+					<h2 class="spent__title">Listado</h2>
+					<div class="spent__list" id="lista">
+						<!-- <div class="spent__item">
+							<p class="spent__gasto-name">Comida</p>
+							<p class="spent__price-cant">200$</p>
+							<button class="spent__delete">Borrar</button>
+						</div> -->
+					</div>
+
+					<p class="spent__budget">Presupuesto: $<pan id="price"></pan></p>
+					<p class="spent__remaining">Restante: $<pan id="resto"></pan></p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
